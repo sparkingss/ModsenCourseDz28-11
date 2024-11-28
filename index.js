@@ -60,19 +60,18 @@ person2.greet();
 Демонстрируйте использование каждого метода, не создавая экземпляры класса.
 */
 
-class MathHelper {
+function MathHelper() {};
 
-    static add(a, b){
-        return a + b;
-    }
+MathHelper.add = (a, b) => {
+    return a + b;
+}
 
-    static subtract(a, b) {
-        return a - b;
-    }
+MathHelper.subtract = (a, b) => {
+    return a - b;
+}
 
-    static multiply(a, b) {
-        return a * b;
-    }
+MathHelper.multiply = (a, b) => {
+    return a * b;
 }
 
 console.log('Результат выражения 1 + 2 = ', MathHelper.add(1, 2));
