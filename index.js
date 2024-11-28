@@ -75,7 +75,9 @@ class MathHelper {
     }
 }
 
-console.log(MathHelper.add(1, 2));
+console.log('Результат выражения 1 + 2 = ', MathHelper.add(1, 2));
+console.log('Результат выражения 14 - 22 = ', MathHelper.subtract(14, 22));
+console.log('Результат выражения: 22 * 3 = ', MathHelper.multiply(22, 3));
 
 
 /*
@@ -111,9 +113,9 @@ const newCar = Object.create(newVehicle, {
 const myCar = Object.create(newCar);
 
 myCar.move();
-console.log(myCar.fuelLevel);
+console.log(`Уровень топлива: ${myCar.fuelLevel}`);
 myCar.refuel(10);
-console.log(myCar.fuelLevel);
+console.log(`Уровень топлива: ${myCar.fuelLevel}`);
 
 
 // Задача 2: (функции конструкторы)
